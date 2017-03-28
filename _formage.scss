@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * @author          Luc Poupard
- * @lastmodified    2017-03-26
+ * @lastmodified    2017-03-28
  * @note            Formage
  */
 
@@ -89,7 +89,8 @@ textarea {
  */
 @if $form-is-normalize == true {
     @media screen and ( -webkit-min-device-pixel-ratio: 1.5 ) {
-        #{$form-fields} {
+        #{$form-fields},
+        select {
             font-size: em(16);
         }
     }
@@ -184,7 +185,8 @@ label,
 
 
 /* == @section Fields ==================== */
-#{$form-fields} {
+#{$form-fields},
+select {
     border: 1px solid rgba( $form-border-color, .2 );
     background-color: $form-input-background;
 
@@ -385,6 +387,8 @@ select[multiple] {
  */
 @if $form-is-select == true {
     select:not([multiple]) {
+        -webkit-appearance: none;
+        -moz-appearance: none;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==);
         background-position: 100%;
         background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * @author          Luc Poupard
- * @lastmodified    2017-03-26
+ * @lastmodified    2017-03-28
  * @note            Formage Variables
  */
 
@@ -57,7 +57,7 @@ $form-is-label-vertical     : true !default;
  * Do you want to use custom styles for select tag?
  * true = yes / false = no
  */
-$form-is-select             : true !default;
+$form-is-select             : false !default;
 
 /**
  * Do you want to hide spinners on number type inputs?
@@ -67,7 +67,7 @@ $form-is-number             : false !default;
 
 
 /* == @section Selectors ==================== */
-$form-fields                : ( 'input[type="text"], input[type="number"], input[type="search"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="color"], input[type="file"], textarea, select' );
+$form-fields                : ( 'input[type="text"], input[type="number"], input[type="search"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="color"], input[type="file"], textarea' );
 $form-radio-checkbox        : ( 'input[type="checkbox"], input[type="radio"]' );
 $form-buttons               : ( 'input[type="submit"], input[type="reset"], input[type="button"], button, .button' );
 
