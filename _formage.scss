@@ -66,7 +66,6 @@ button,
 select,
 textarea {
     padding: $form-input-padding;
-    width: 100%;
     border-radius: $form-border-radius;
     font-family: inherit; // Fix typo inputs
     font-size: 1em; // Fix typo inputs
@@ -76,6 +75,17 @@ textarea {
             max-width: em( $form-input-width );
         }
     }
+}
+
+form,
+.form,
+fieldset,
+.fieldset {
+    #{$form-fields},
+    input[type="range"],
+    select {
+        width: 100%;
+    }  
 }
 
 /* Do not display delete cross in IE/Edge */
